@@ -81,6 +81,9 @@ export class CompareApp extends LitElement {
           @merge=${this.onClickMergeItem}
         ></compare-diff-item>
       `) : ''}
+      ${this.diff && !this.diff.length ? html`
+        <div class="empty">No differences found.</div>
+      ` : ''}
     `    
   }
 

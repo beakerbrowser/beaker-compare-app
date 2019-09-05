@@ -11,11 +11,9 @@ ${tooltipCSS}
 :host {
   display: block;
   max-width: 1000px;
-  min-height: 100vh;
-  margin: 0 auto;
-  border-left: 1px solid #bbb;
-  border-right: 1px solid #bbb;
-  background: #fff;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-bottom: 0;
 }
 
 .header {
@@ -39,10 +37,21 @@ ${tooltipCSS}
   text-decoration: underline;
 }
 
+.header .primary {
+  font-size: 13px;
+}
+
+.empty {
+  padding: 18px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  color: #666;
+}
+
 compare-diff-item .item {
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: 14px;
   user-select: none;
 }
 
